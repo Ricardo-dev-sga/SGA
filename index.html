@@ -3,20 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
     <title>SGI - Sistema de Gestión Integral</title>
+    <script defer src="assets/js/javascript.js"></script>
 </head>
 <body>
     <h1>SIG - Sistema de Gestión Integral</h1>
-    <h2>Probando link</h2>
-    
-    <li>
-        <a href="https://drive.google.com/file/d/1wykbbEI2Oi-HiwYH9ovKkJC29xMv-PQq/view?usp=drive_link" target="_blank">01 - Manual SGI</a>
-    </li>
-    <li>
-        <a href="https://drive.google.com/file/d/1MS-dW1abJj-woMyTeaDDuRYLpi0gU1ah/view?usp=drive_link" target="_blank">02 - Determinación del Alcance</a>
-    </li>
-    <li>
-        <a href="https://drive.google.com/drive/folders/1hISr8XmXNd32UnvjF5lYeB7FabXXmwCi?usp=drive_link" target="_blank">03 - Carpeta..</a>
-    </li>
+    <!-- Header fijo -->
+    <header>
+        <nav>
+            <a href="index.html" >Home</a>
+            <a href="#" onclick="loadContent('01.html')">01</a>
+            <a href="#" onclick="loadContent('02.html')">02</a>
+            <a href="#" onclick="loadContent('03.html')">03</a>
+        </nav>
+    </header>
+
+    <!-- Contenedor donde cambia el contenido -->
+    <main id="content">
+    </main>
+
+    <!-- Footer fijo -->
+    <footer>
+        <p>&copy; 2025 Mi Sitio Web - Todos los derechos reservados</p>
+    </footer>
 </body>
 </html>
