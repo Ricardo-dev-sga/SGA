@@ -209,10 +209,18 @@ summary>a{
 @media screen and (max-width: 425px) {
     h1{
         font-size: larger;
+        text-align: center;
     }
 
     footer>p{
         position: relative;
         padding-left: 1rem;
     }
+
+
+    /* 03 */
+    .centrar-contenido-final>h2{
+        padding: 0;
+    }
+
 }
