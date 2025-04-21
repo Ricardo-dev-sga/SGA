@@ -34,6 +34,14 @@
 .icon-home {
     background-image: url('../icons/home.svg');
 }
+.icon-chevron-der {
+    background-image: url('../icons/chevron-derecha-en-círculo-64.png');
+}
+.icon-info {
+    background-image: url('../icons/info-64.png');
+}
+
+
 
 /* 03-Personalización de tamaño */
 .i.small { width: 16px; height: 16px; }

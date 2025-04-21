@@ -25,6 +25,11 @@ main{
     min-height: 99vh;
 }
 
+.panedile{
+    font-weight: bold;
+    color: #354F61;
+}
+
 footer>p{
     position: fixed;
     bottom: 0px;
@@ -67,7 +72,7 @@ li{
 }
 
 .centrar-contenido-final{
-    min-width: 50%;
+    min-width: 90%;
     margin: 0 auto;
     margin-top: 2rem;
     padding-left: 2rem;
@@ -135,15 +140,26 @@ li{
     -webkit-box-shadow: 10px 10px 7px -7px rgba(0,0,0,0.75);
     -moz-box-shadow: 10px 10px 7px -7px rgba(0,0,0,0.75);
     box-shadow: 10px 10px 7px -7px rgba(0,0,0,0.75);
-
 }
-/* .inicio-listado>li>a{
-    color: antiquewhite;
-}
-.home-logo{
-    mix-blend-mode: multiply;
-} */
 
+.inicio-listado>li>a, .manual-doc{
+    display: flex;
+    align-items: center;
+}
+
+.inicio-listado>li>a>i, .manual-doc>i{
+    margin-right: 0.4rem;
+}
+
+
+.manual-doc-info{
+    display: flex;
+    justify-content: space-between;
+}
+
+.info-doc-revision{
+    margin-left: 2rem;
+}
 
 /** 03 ******************/
 .div-micro-menu{
@@ -185,6 +201,39 @@ summary>a{
     margin-left: 1rem;
 }
 
+/* Componentes-SGA */
+.componente-tarjeta{
+    height: 2rem;
+    max-width: 70%;
+    display: flex;
+    align-items: center;
+    margin: 1rem 0;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+    padding-left: 1.5rem;
+    box-shadow: 10px 10px 7px -7px rgba(0,0,0,0.75);
+}
+.table-componente-sga{
+    border-spacing: 1.3rem;
+}
+.proyect{
+    border: 1px solid rgb(180, 178, 178);
+    padding: 0 .5rem;
+    font-size: 0.8em;
+}
+.proyect>a{
+    color: rgb(109, 108, 108);
+}
+
+tbody>tr{
+    height: 45px;
+    color: darkslategray;
+}
+
+tbody>tr:hover{
+    box-shadow: 3px 4px 18px 0px rgb(106 187 209);
+    transition: box-shadow 0.3s ease;
+}
 
 /* IMAGEN DE FONDO POR SECCIÓN o General*/
 /* general */
@@ -217,10 +266,21 @@ summary>a{
         padding-left: 1rem;
     }
 
+    .centrar-contenido-final, .centrar-contenido-final>h2{
+        padding: 0;
+    }
 
     /* 03 */
-    .centrar-contenido-final>h2{
+    /* .centrar-contenido-final>h2{
         padding: 0;
+    } */
+
+    /* component-sga */
+    .componente-tarjeta{
+        max-width: 100%;
+        padding: 0;
+        box-shadow: -6px 10px 7px -7px rgba(0,0,0,0.75);
+
     }
 
 }
